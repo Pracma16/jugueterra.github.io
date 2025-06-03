@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="titulo-marca" src="/image/titulo.png" alt=""></a>
+        <nav class="menu">
+          <li><a href="index.html">Incio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+        </nav>
+      </header>
+    <!-- carrito.html -->
+    <section id="carrito" class="carrito">
+    <h2>Tu Carrito</h2>
+    <div class="carrito-one">
+        <div class="carrito-two">
+        <img src="ruta-del-producto.jpg" alt="Producto" class="item-img">
+        <div class="item-detalle">
+            <h3>Nombre del Producto</h3>
+            <p>$25.00</p>
+            <input type="number" value="1" min="1" class="item-cantidad">
+            <button class="btn-eliminar">Eliminar</button>
+        </div>
+        </div>
+        <!-- Más productos aquí -->
+    </div>
+    <div class="carrito-total">
+        <p>Total: $<span id="total">25.00</span></p>
+        <button class="btn-comprar">Finalizar Compra</button>
+    </div>
+    </section>
+
+</body>
+</html>

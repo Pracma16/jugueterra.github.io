@@ -1,20 +1,60 @@
-let entrada = prompt('ingresa tu nombre')
+// const track = document.querySelector('.slider-track');
+// const prevBtn = document.querySelector('.slider-btn.prev');
+// const nextBtn = document.querySelector('.slider-btn.next');
+// let slides = document.querySelectorAll('.slider-track .category');
+// let currentIndex = 0;
+// let totalSlides = slides.length;
 
-console.log(entrada)
-let nombre = 'Juan';
-console.log(nombre)
+// Clona para efecto infinito
+// function cloneSlides() {
+//   const first = slides[0].cloneNode(true);
+//   const last = slides[totalSlides - 1].cloneNode(true);
+//   track.appendChild(first);
+//   track.insertBefore(last, slides[0]);
+//   slides = document.querySelectorAll('.slider-track .category');
+// }
 
-var nombre2 = "Kelly";
-const PI = 3.14;
-console.log(typeof (PI))
-console.log(typeof (nombre))
+// function updateSlider() {
+//   const slideWidth = slides[0].offsetWidth;
+//   track.style.transform = `translateX(-${(currentIndex + 1) * slideWidth}px)`;
+// }
 
-let nombre3 = 'Miguel';
-console.log(nombre3)
-nombre3 = 4;
-console.log(nombre3)
+// function nextSlide() {
+//   currentIndex++;
+//   if (currentIndex >= totalSlides) {
+//     track.style.transition = 'none';
+//     currentIndex = 0;
+//     updateSlider();
+//     setTimeout(() => {
+//       track.style.transition = 'transform 0.5s ease';
+//       currentIndex++;
+//       updateSlider();
+//     }, 50);
+//   } else {
+//     updateSlider();
+//   }
+// }
 
-var numero = prompt("ingrese un numero")
-console.log(numero)
-let numero = prompt("ingrese un numero")
-console.log(numero)
+// function prevSlide() {
+//   currentIndex--;
+//   if (currentIndex < 0) {
+//     track.style.transition = 'none';
+//     currentIndex = totalSlides - 1;
+//     updateSlider();
+//     setTimeout(() => {
+//       track.style.transition = 'transform 0.5s ease';
+//       currentIndex--;
+//       updateSlider();
+//     }, 50);
+//   } else {
+//     updateSlider();
+//   }
+// }
+
+// nextBtn.addEventListener('click', nextSlide);
+// prevBtn.addEventListener('click', prevSlide);
+
+// window.addEventListener('load', () => {
+//   cloneSlides();
+//   updateSlider();
+// });
