@@ -4,57 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/style.css">
-    
+    <link rel="stylesheet" href="Css/style1.css">
+    <link rel="stylesheet" href="/Css/cart.css">
+     <link rel="icon" href="/image/icono-jugueterra.png" type="imagen-tierra-del-juguete">
     <title>Jugueterra</title>
 </head>
-  <body class="fondo-opaco">
+  <body>
     <header>
-      <a href="index.html"><img class="titulo-marca" src="/image/titulo.png" alt=""></a>
-      <nav class="menu">
-        <li><a href="index.html">Incio</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="tienda.html">Tienda</a></li>
-        <li><a href="carrito.html">Carrito</a></li>
+      <a href="index.html">
+        <img class="titulo-marca" src="/image/logo-titulo-jugueterra.png" alt="">
+      </a>
+      <nav class="navbar">
+        <!-- Ícono hamburguesa -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- Menú de navegación -->
+        <ul class="menu" id="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="carrito.html">Carrito</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
       </nav>
     </header>
-    <main>
+
+    <main> 
       <article>
-        <section class="categorias">
-          <div class="category">
-            <a href="lego.html"><img class="cat" src="/image/legos.png" alt="Lego"><h2>Lego</h2></a>
+        <section class="categorias-slider">
+          <!-- Flechas móviles -->
+          <button class="arrow left" id="slider-prev">&#10094;</button>
+
+          <div class="categorias" id="categoriasTrack">
+            <div class="category">
+              <a href="lego.html"><img class="cat" src="/image/legos.png" alt="Lego"></a>
+              <h2 class="cate">Lego</h2>
+            </div>
+            <div class="category">
+              <a href="peluches.html"><img class="cat" src="/image/peluches.png" alt="Peluches"></a>
+              <h2 class="cate">Peluches</h2>
+            </div>
+            <div class="category">
+              <a href="carros-y-pistas.html"><img class="cat" src="/image/carrosypistas.png" alt="Carros"></a>
+              <h2 class="cate">Hotweels</h2>
+            </div>
+            <div class="category">
+              <a href="juegos-de-mesa.html"><img class="cat" src="/image/juegos.png" alt="Juegos"></a>
+              <h2 class="cate">Juegos</h2>
+            </div>
+            <div class="category">
+              <a href="figuras.html"><img class="cat" src="/image/figuras.png" alt="Figuras"></a>
+              <h2 class="cate">Figuras</h2>
+            </div>
+            <div class="category">
+              <a href="muñecas.html"><img class="cat" src="/image/muñecas.png" alt="Muñecas"></a>
+              <h2 class="cate">Muñecas</h2>
+            </div>
           </div>
-          <div class="category">
-            <a href="peluches.html"><img class="cat" src="/image/peluches.png" alt="Peluches"><h2>Peluches</h2></a>
-          </div>
-          <div class="category">
-            <a href="carros-y-pistas.html"><img class="cat" src="/image/carrosypistas.png" alt="Carros"><h2>Carros y Pistas</h2></a>
-          </div>
-          <div class="category">
-            <a href="juegos-de-mesa.html"><img class="cat" src="/image/juegos.png" alt="Juegos"><h2>Juegos de Mesa</h2></a>
-          </div>
-          <div class="category">
-            <a href="figuras.html"><img class="cat" src="/image/figuras.png" alt="Figuras"><h2>Figuras</h2></a>
-          </div>
-          <div class="category">
-            <a href="muñecas.html"><img class="cat" src="/image/muñecas.png" alt="Muñecas"><h2>Muñecas</h2></a>
-          </div>
+
+          <button class="arrow right" id="slider-next">&#10095;</button>
         </section>
         <section class="baner-inicial">
           <div class="baner-personajes">
             <img class="baner-imagen-personajes" src="/image/jugueterra/Jugueterabaner.png" alt="">
           </div>
         </section>
-
-        <section>
-          <h2>Iniciar sesión</h2><i class="fa-solid fa-circle-user"></i>
-          <form action="https://www.creartyvo.com/" method="post">
-            <label for="nombre">Nombre: <br></label>
-            <input type="text" id="nombre" name="nombre">
-            
-            <label for="email"><br>Correo electrónico <br></label>
-            <input type="email" id="email" name="email"><br>
-            <button type="submit">Enviar</button>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-content">
+                <h4>¡Hacé el cambio que necesitás!</h4>
+                <h2>Súper ofertas</h2>
+                <h1>En todos los productos</h1>
+                <p>¡Aprovechá cupones y descuentos de hasta el 70%!</p>
+                <a href="tienda.html"><button>Comprar</button></a>
+            </div>
         </section>
+         <!-- NEWSLETTER -->
+        <section class="newsletter section-p1 section-m1">
+            <div class="newstext">
+                <h4>Suscribite al Newsletter</h4>
+                <p>Recibí novedades de nuestra tienda y <span>ofertas exclusivas</span></p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Tu correo electrónico">
+                <button>Suscribirme</button>
+            </div>
+        </section>
+        
       </article>
 
       <form action="https://formspree.io/f/tuFormularioID" method="POST">
@@ -71,9 +109,48 @@
       </form>
       
     </main>
-    <footer>
-      <p> 2025 Nombre del sitio. Todos los derechos reservados.</p>
+    <!-- FOOTER -->
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contacto</h4>
+            <p><strong>Dirección:</strong> Av corrientes 1200, Ciudad Autónoma de Buenos Aires</p>
+            <p><strong>Teléfono:</strong> +54 1145022869</p>
+            <p><strong>Horario:</strong> 9:00 - 18:00, Lunes a Viernes</p>
+            <div class="follow">
+                <h4>Seguinos</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+
+            </div>
+        </div>
+        <div class="col">
+            <h4>Mi Cuenta</h4>
+            <a href="carrito.html">Ver Carrito</a>
+            <a href="contacto.html">Mis Favoritos</a>
+            <a href="contacto.html">Seguimiento de Pedido</a>
+            <a href="contacto.html">Ayuda</a>
+        </div>
+        <div class="col install row">
+            <h4>Descargá la App</h4>
+            <p>Desde App Store o Google Play</p>
+            <div class="row">
+                <img class="row-img" src="/image/jugueterra/Apple-App-Store.png" alt="App Store">
+                <img class="row-img" src="/image/jugueterra/google-play.png" alt="Google Play">
+            </div>
+            <p>Pasarelas de pago seguras</p>
+            <img class="row-img" src="/image/jugueterra/pagos-seguros.png" alt="Métodos de Pago">
+        </div>
+        <div class="copyright">
+            <p>© 2025, Javier Chaves |Todos los derechos reservados - Ecommerce Jugueterra </p>
+        </div>
     </footer>
-  <script src="JS/style.js"></script>
+  <script src="/JS/style.js"></script>
+  <script src="/JS/productos.js"></script>
+
 </body>
 </html>

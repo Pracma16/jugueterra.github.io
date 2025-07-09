@@ -10,7 +10,6 @@ HTML para la estructura.
 
 CSS para el estilo.
 
-JavaScript para la funcionalidad (como agregar productos al carrito). en proceso de construccion...
 
 Funcionalidades
 Visualización de productos.
@@ -29,6 +28,8 @@ Navega por los productos.
 Elige la cantidad y añade al carrito.
 
 Revisa tu carrito y el total.
+
+Finalizar y simular una compra de os productos seleccionados.
 
 Cómo ejecutar
 Solo necesitas un navegador moderno (Chrome, Firefox, Edge, etc.) para abrir el archivo HTML y probar la tienda.

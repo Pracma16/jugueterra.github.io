@@ -1,0 +1,112 @@
+   ------------------------------- */
+.producto-detalle {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.producto-contenedor {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* --------------------
+   Imagen del producto
+   -------------------- */
+.conten-imagen-cat {
+  width: 100%;
+}
+
+.conten-imagen-cat img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* --------------------------
+   Información del producto
+   -------------------------- */
+.producto-info {
+  padding: 16px;
+}
+
+.producto-valoracion span {
+  font-size: 1.2rem;
+  color: #f5a623;
+}
+
+.producto-descripcion h2 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.producto-descripcion p {
+  margin: 0;
+  color: #555;
+}
+
+/* --------------------------
+   Botón de 'Ver más' / compra
+   -------------------------- */
+.producto-acciones {
+  margin-top: 16px;
+}
+
+.producto-acciones button {
+  appearance: none;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.producto-acciones button:hover {
+  background-color: #218838;
+}
+
+/* --------------------------
+   Responsive: tablet en adelante
+   -------------------------- */
+@media (min-width: 768px) {
+  .producto-contenedor {
+    flex-direction: row;
+  }
+
+  .conten-imagen-cat,
+  .producto-info {
+    width: 50%;
+  }
+
+  .producto-acciones {
+    text-align: left;
+  }
+}
+
+/* -----------------------
+   Responsive: desktop XL
+   ----------------------- */
+@media (min-width: 1024px) {
+  .producto-contenedor {
+    gap: 24px;
+  }
+
+  .producto-info {
+    padding: 32px;
+  }
+
+  .producto-acciones button {
+    padding: 14px 28px;
+    font-size: 1.1rem;
+  }
+}

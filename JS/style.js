@@ -1,60 +1,44 @@
-// const track = document.querySelector('.slider-track');
-// const prevBtn = document.querySelector('.slider-btn.prev');
-// const nextBtn = document.querySelector('.slider-btn.next');
-// let slides = document.querySelectorAll('.slider-track .category');
-// let currentIndex = 0;
-// let totalSlides = slides.length;
+// Obtener elementos del DOM
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
 
-// Clona para efecto infinito
-// function cloneSlides() {
-//   const first = slides[0].cloneNode(true);
-//   const last = slides[totalSlides - 1].cloneNode(true);
-//   track.appendChild(first);
-//   track.insertBefore(last, slides[0]);
-//   slides = document.querySelectorAll('.slider-track .category');
-// }
+// Al hacer clic en el botón hamburguesa
+if (hamburger) {
+  hamburger.addEventListener('click', () => {
+    // Alterna la visibilidad del menú
+    menu.classList.toggle('show');
+    
+    // Alterna la animación del botón hamburguesa a X
+    hamburger.classList.toggle('active');
+  });
+}
 
-// function updateSlider() {
-//   const slideWidth = slides[0].offsetWidth;
-//   track.style.transform = `translateX(-${(currentIndex + 1) * slideWidth}px)`;
-// }
+//Slider categorias
 
-// function nextSlide() {
-//   currentIndex++;
-//   if (currentIndex >= totalSlides) {
-//     track.style.transition = 'none';
-//     currentIndex = 0;
-//     updateSlider();
-//     setTimeout(() => {
-//       track.style.transition = 'transform 0.5s ease';
-//       currentIndex++;
-//       updateSlider();
-//     }, 50);
-//   } else {
-//     updateSlider();
-//   }
-// }
+const track = document.getElementById("categoriasTrack");
+const prevBtn = document.getElementById("slider-prev");
+const nextBtn = document.getElementById("slider-next");
 
-// function prevSlide() {
-//   currentIndex--;
-//   if (currentIndex < 0) {
-//     track.style.transition = 'none';
-//     currentIndex = totalSlides - 1;
-//     updateSlider();
-//     setTimeout(() => {
-//       track.style.transition = 'transform 0.5s ease';
-//       currentIndex--;
-//       updateSlider();
-//     }, 50);
-//   } else {
-//     updateSlider();
-//   }
-// }
+// Scroll manual
+prevBtn.addEventListener("click", () => {
+  track.scrollBy({ left: -200, behavior: "smooth" });
+});
 
-// nextBtn.addEventListener('click', nextSlide);
-// prevBtn.addEventListener('click', prevSlide);
+nextBtn.addEventListener("click", () => {
+  track.scrollBy({ left: 200, behavior: "smooth" });
+});
 
-// window.addEventListener('load', () => {
-//   cloneSlides();
-//   updateSlider();
-// });
+// Autoplay solo en mobile
+let autoplay = () => {
+  if (window.innerWidth < 1024) {
+    setInterval(() => {
+      if (track.scrollLeft + track.offsetWidth >= track.scrollWidth - 5) {
+        track.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        track.scrollBy({ left: 200, behavior: "smooth" });
+      }
+    }, 3500);
+  }
+};
+
+autoplay();

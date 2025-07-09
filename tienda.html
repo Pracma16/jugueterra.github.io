@@ -3,26 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="/Css/tienda.css">
     <link rel="stylesheet" href="Css/style.css">
-    
-    <title>Jugueterra</title>
+    <link rel="stylesheet" href="/Css/style1.css">
+    <link rel="stylesheet" href="/Css/cart.css">
+    <title>Jugueterra Tienda</title>
 </head>
-  <body class="fondo-opaco">
-      <header>
-        <a href="index.html"><img class="titulo-marca" src="/image/titulo.png" alt=""></a>
-        <nav class="menu">
-          <li><a href="index.html">Incio</a></li>
-          <li><a href="productos.html">Productos</a></li>
+    <header>
+      <a href="index.html"><img class="titulo-marca" src="/image/logo-titulo-jugueterra.png" alt=""></a>
+      <nav class="navbar">
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul class="menu" id="menu">
+          <li><a href="index.html">Inicio</a></li>
           <li><a href="tienda.html">Tienda</a></li>
           <li><a href="carrito.html">Carrito</a></li>
-        </nav>
-      </header>
-      <main>
-        
-      </main>
-      <footer>
-        <p> 2025 Nombre del sitio. Todos los derechos reservados.</p>
-      </footer>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <div id="products-container"></div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contacto</h4>
+            <p><strong>Dirección:</strong> Av corrientes 1200, Ciudad Autónoma de Buenos Aires</p>
+            <p><strong>Teléfono:</strong> +54 1145022869</p>
+            <p><strong>Horario:</strong> 9:00 - 18:00, Lunes a Viernes</p>
+            <div class="follow">
+                <h4>Seguinos</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+
+            </div>
+        </div>
+        <div class="col">
+            <h4>Mi Cuenta</h4>
+            <a href="carrito.html">Ver Carrito</a>
+            <a href="contacto.html">Mis Favoritos</a>
+            <a href="contacto.html">Seguimiento de Pedido</a>
+            <a href="contacto.html">Ayuda</a>
+        </div>
+        <div class="col install row">
+            <h4>Descargá la App</h4>
+            <p>Desde App Store o Google Play</p>
+            <div class="row">
+                <img class="row-img" src="/image/jugueterra/Apple-App-Store.png" alt="App Store">
+                <img class="row-img" src="/image/jugueterra/google-play.png" alt="Google Play">
+            </div>
+            <p>Pasarelas de pago seguras</p>
+            <img class="row-img" src="/image/jugueterra/pagos-seguros.png" alt="Métodos de Pago">
+        </div>
+        <div class="copyright">
+            <p>© 2025, Javier Chaves |Todos los derechos reservados - Ecommerce Jugueterra </p>
+        </div>
+    </footer>
+  <script src="/JS/tienda.js"></script>    
   <script src="JS/style.js"></script>
+  <script src="/JS/productos.js"></script>
 </body>
 </html>

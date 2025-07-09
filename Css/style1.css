@@ -1,0 +1,75 @@
+/* importaciones de estilos */
+@import url(/Css/banner.css);
+@import url(/Css/carrito.css);
+@import url(/Css/contacto.css);
+@import url(/Css/footer.css);
+@import url(/Css/hero.css);
+@import url(/Css/productos.css);
+@import url(/Css/style.css);
+@import url(/Css/tienda.css);
+@import url(/Css/newsletter.css);
+@import url(/Css/cart.css);
+@import url(/Css/categorias.css);
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root{
+  --principal: #080064;
+  --secundrio: #A19EC8;
+  --terceario: #FEED00;
+  --iconos: #0053fe;
+  --fondos: #ffffff;
+  --letras: #1f1f20;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos Globales */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+
